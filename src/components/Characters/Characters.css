@@ -1,0 +1,33 @@
+.individual-card{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 1rem 3rem rgba(10, 10, 10, 0.3);
+    border: 1px solid rgba(10, 10, 10, 0.1);
+}
+.img-containerr{
+    width: 350px;
+    margin-bottom: 1rem;
+}
+
+.enlacee{
+    font-size: 1.7rem;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.statuss{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.origenn{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
