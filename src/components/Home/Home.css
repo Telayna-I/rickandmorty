@@ -1,28 +1,39 @@
 .card{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
     margin: auto;
-    width: 70%;
-    margin-bottom: 3rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
     box-shadow: 0 1rem 3rem rgba(10, 10, 10, 0.3);
     border: 1px solid rgba(10, 10, 10, 0.1);
     border-radius: 8px;
     overflow: hidden;
 }
 
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
 .character-info{
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
-    width: 80%;
+    width: 100%;
 }
 
 .enlace{
     align-self: center;
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    line-height: 2rem;
 }
 
 .enlace:hover{
@@ -32,4 +43,10 @@
 
 .status{
     margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        width: 40%;
+    }
 }

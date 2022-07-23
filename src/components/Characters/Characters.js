@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getCharacter } from '../../functions/functions';
-import { Link } from 'react-router-dom';
 import './Characters.css'
 
 const Characters = () => {
@@ -11,7 +9,14 @@ const Characters = () => {
     const [character, setCharacter] = useState(null)
     
     useEffect(()=>{
-        getCharacter(params.id, setCharacter)
+        const getCharacter = async ()=>{
+            const response = await fetch(`https://rickandmortyapi.com/api/character/${params.id}`)
+            const data = await response.json()
+            setCharacter(data)
+            console.log(data)
+        }
+
+        getCharacter()
     },[])
 
     return (
@@ -28,7 +33,7 @@ const Characters = () => {
                     <h4 className='origenn'>Origen: {character.origin.name}</h4>
                     <h4 className='statuss'>Especie: {character.species}</h4>
                 </div>
-            </div>: null}
+            </div> : null}
         </>
     )
 }

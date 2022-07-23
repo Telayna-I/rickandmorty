@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header p{
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    padding: 0.3rem;
+    background-color: rgb(55, 139, 216);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container-pj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

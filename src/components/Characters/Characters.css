@@ -31,3 +31,8 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
+
+.imgg{
+    width: 100%;
+    object-fit: scale-down;
+}
